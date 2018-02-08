@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>    
+        <title>TED - Ideas Worth Spreading</title>
+        <script src="lib/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+        <script src="vp-script.js"></script>
+    
+        <link rel="stylesheet" href = "vp-style.css">
+    </head>
+
+    <body>
+        
+        <h1>TED - Ideas Worth Spreading</h1>
+
+        <video id="video" controls="controls" preload="none" class="video-class" 
+        poster="media2/1267341_626716080712957_1644919320_o.png">
+                The browser does not support the video.
+        </video>
+        <ul id="videoplaylist">
+            <h2>TED Talks</h2>
+            
+            <li movieurl="media2/SarahKay.mp4" 
+                movieposter="media2/1267341_626716080712957_1644919320_o.png">
+                <span class = "text"> <img class = "imag" src="media2/1267341_626716080712957_1644919320_o.png">
+                    Sarah Key - If I Should Have a Daughter</span>
+            </li>
+            <li movieurl="media2/Danielle Feinberg.mp4"
+                movieposter="media2/1267341_626716080712957_1644919320_o.png">
+                <span class = "text"><img class = "imag" src="media2/1267341_626716080712957_1644919320_o.png"> 
+                    Danielle Feinberg - The magic ingredient that brings Pixar movies to life</span>
+            </li>
+            <li movieurl="media2/Shane Koyczan.mp4"
+                movieposter="media2/1267341_626716080712957_1644919320_o.png">
+                <span class = "text"> <img class = "imag" src="media2/1267341_626716080712957_1644919320_o.png"> 
+                    Shane Koyczan - To This Day ... for the bullied and beautiful</span>
+            </li>
+            <li movieurl="media2/Sir Ken Robinson.mp4"
+                movieposter="media2/1267341_626716080712957_1644919320_o.png">
+                <span class = "text"><img class = "imag" src="media2/1267341_626716080712957_1644919320_o.png"> 
+                    Sir Ken Robinson - Do schools kill creativity?</span>
+            </li>
+        </ul>
+
+        <div id="video-controls" class="controls"> 
+            <button id="play-pause" onclick="playVideo()">></button>
+            <button id="prev" state="play"><<</button>
+            <button id="next">>></button>
+            <progress id='progress-bar' min='0' max='100' value='0'></progress>
+            <span id=progressText> 0000</span>
+            <button id="snap" >Screenshot</button>
+        </div>
+        
+        <div id="effects">
+            <button class="videoEffect" data-effect="noeffect">Normal</button>
+            <button class="videoEffect" data-effect="blackwhite-effect">Black & White</button>
+            <button class="videoEffect" data-effect="sephia-effect">Sephia</button>
+            <button class="videoEffect" data-effect="threshold-effect">Threshold</button>
+            <button class="videoEffect" data-effect="invert-effect">InvertColors</button>
+        </div>
+        
+    </body>
+
+    <div id=canv>
+    <canvas id="canvas"></canvas>
+    <canvas id="canvasCapture"></canvas>
+</div>
+
+</html>

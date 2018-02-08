@@ -1,0 +1,131 @@
+body
+{
+    background: rgba(22, 22, 22, 0.76);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1{
+    color: rgb(253, 249, 249);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    font-weight: normal;
+    margin:0;
+    padding: 0;
+}
+
+h2{
+    color: rgb(253, 251, 251);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    margin:0;
+    padding: 0;
+}
+
+#video
+{
+    width: 650px;
+    height: 450px;
+    margin-top: 17px;
+}
+
+#videoplaylist
+{
+    padding: 1px;
+    vertical-align: middle;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    top: 11%;
+    left: 51%;
+    position: absolute;
+}
+
+#videoplaylist li
+{
+    cursor: pointer;
+    display: grid;
+    background: rgba(26, 25, 25, 0.959);
+    color: white;
+    margin:10px;
+
+}
+
+.imag
+{
+    width: 120px;
+    height: 90px;
+    vertical-align: middle;
+    padding: 0;
+}
+
+#text{
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#videoplaylist li:hover{
+    background: rgba(129, 129, 131, 0.418);
+    cursor: pointer;
+}
+
+#videoplaylist .active
+{
+    background :white;
+    color:black;
+}
+
+#videoplaylist li::selection
+{
+    background-color: white;
+}
+
+.controls button
+{
+    border-radius: 20%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #2e0101
+}
+
+progress{
+    border:none;
+    color:#411010b4;
+    border-radius:3px; 
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px; 
+    width: 400px;
+}
+
+#snap
+{
+    border-radius: 0;
+    font-weight: normal;
+}
+
+#progressText
+{
+    color: white;   
+}
+progress::-webkit-progress-value {
+    background: rgba(177, 2, 2, 0.575);
+  }
+  
+  progress::-moz-progress-bar {
+    background: rgba(124, 106, 106, 0.521);
+  }
+  
+  progress::-webkit-progress-value {
+    background: rgba(83, 1, 1, 0.829);
+  }
+  
+  progress::-webkit-progress-bar {
+    background: rgba(124, 106, 106, 0.521);
+  }
+
+  #canv
+  {
+    margin-left: 12px;
+    border:1px solid white;
+    position: absolute;
+  }
+
